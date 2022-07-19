@@ -1,0 +1,109 @@
+.post {
+    background: var(--gray-800);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.post + .post {
+    margin-top: 2rem;
+}
+
+.post > header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post time {
+    font-size: 0.875rem;
+    margin-top: -1.5rem;
+}
+
+.profile {
+    gap: 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.profile div {
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile div strong {
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+    color: var(--gray-100);
+}
+
+.profile div span {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: var(--green-300);
+}
+
+.forms {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-600);
+}
+
+.forms textarea {
+    width: 100%;
+    height: 6rem;
+    background: var(--gray-900);
+    border: none;
+    line-height: 1.4;
+    color: var(--gray-100);
+    border-radius: 0.5rem;
+    margin: 1rem 0px;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+}
+
+.forms footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.forms:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.forms button {
+    background: var(--green-500);
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.1s;
+}
+
+.forms button:hover {
+    background: var(--green-300);
+}

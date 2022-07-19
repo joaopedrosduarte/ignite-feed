@@ -1,0 +1,99 @@
+.comment {
+    display: flex;
+    margin: 1rem 0rem;
+}
+
+.comment main {
+    display: flex;
+}
+
+.status button {
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    line-height: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.1s color;
+}
+
+.status button:hover {
+    color: var(--red-500);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    background: #29292e;
+    margin-left: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+    color: var(--gray-300);
+    margin-bottom: 1.5rem;
+}
+
+.status {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color:var(--gray-100);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.status span {
+    color: var(--gray-400);
+}
+
+.nameStatus span,strong {
+    line-height: 1.6;
+}
+
+.content time {
+    margin: 0;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.feedback {
+    display: flex;
+}
+
+.geralContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.geralContent footer {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.feedback button {
+    background: transparent;
+    border: 0;
+    display: flex;
+    font-weight: bold;
+    color: var(--gray-400);
+    transition: 0.1s color;
+    border-radius: 2px;
+}
+
+.feedback button svg {
+    margin-right: 0.5rem;
+}
+
+.feedback button:hover {
+    color: var(--green-300);
+}
+
+.feedback button span::before {
+    content: "\2022";
+    padding: 0 0.25rem;
+}
